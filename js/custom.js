@@ -56,4 +56,31 @@ $(document).ready(function () {
       }
     }
   });
+  // hero slider
+  var swiper = new Swiper(".heroSwiper", {
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 1000, // <-- transition duration (in ms), adjust as needed
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+  // Header
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".site-header");
+    if (window.scrollY > 100) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
 });
