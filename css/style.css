@@ -279,9 +279,10 @@ figure {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
-  width: 380px;
-  height: 665px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 278px;
+  height: 500px;
   background-image: url(../images/number-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -314,7 +315,7 @@ figure {
   width: 200px;
   height: 130px;
   object-position: center;
-   margin: 0 0 5px 0;
+  margin: 0 0 5px 0;
 }
 
 .counter-box h3 {
@@ -330,4 +331,113 @@ figure {
   color: var(--white);
   text-align: center;
   margin: 0;
+}
+
+/*  */
+.our-partner {
+  padding: 50px 0 0;
+  background-color: var(--white);
+  position: relative;
+}
+.our-partner::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  width: 100%;
+  background-color: var(--light-gray);
+}
+.our-partner h2 {
+  font: 600 56px/1.2 var(--font-family-p1);
+  color: var(--brown-text);
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.our-partner p {
+  font: 400 23px/1.6 var(--font-family-p1);
+  margin: 0 0 50px 0;
+  color: var(--black);
+    position: relative;
+  z-index: 1;
+}
+
+.partner-swiper {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #00000063;
+}
+
+.partner-swiper .swiper-button-prev,
+.partner-swiper .swiper-button-next {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--brown-text);
+}
+
+.partner-swiper .swiper-button-prev::after,
+.partner-swiper .swiper-button-next::after {
+  font-size: 16px;
+  color: var(--white);
+}
+
+.partner-swiper .swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  /* height: 300px; */
+}
+
+/* .partner-swiper .swiper-slide::before{
+  position: absolute;
+  content: '';
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  z-index: 0;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+} */
+.partner-swiper .swiper-slide img {
+  /* width: 130px;
+  height: 70px; */
+  object-fit: contain;
+  object-position: center;
+  z-index: 1;
+  position: relative;
+}
+
+.partner-swiper .swiper-slide.swiper-slide-active {
+  transform: scale(1.2);
+}
+
+.partner-swiper .swiper-pagination {
+  position: unset;
+  transform: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0;
+}
+
+.partner-swiper .swiper-pagination-bullet {
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  background: var(--white) !important;
+}
+
+.partner-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: var(--brown-text) !important;
+}
+
+/*  */
+.latest-news {
+  padding: 50px 0 50px;
 }

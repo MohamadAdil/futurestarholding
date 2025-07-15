@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // Counter js
   const counters = document.querySelectorAll('.counter');
 
   counters.forEach(counter => {
@@ -17,5 +18,42 @@ $(document).ready(function () {
     };
 
     updateCount();
+  });
+  // partent slider
+  const partnerSwiper = new Swiper('.partner-swiper', {
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 5,
+    spaceBetween: 50,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+      1200: {
+        slidesPerView: 5,
+      }
+    }
   });
 });
