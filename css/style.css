@@ -272,7 +272,7 @@ figure {
   padding: 50px 0;
   background-color: #766443;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .holding-numbers::before {
@@ -281,10 +281,10 @@ figure {
   left: 0;
   bottom: 0;
   width: 380px;
-  height: 665px; 
+  height: 665px;
   background-image: url(../images/number-bg.png);
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
   background-position: center;
   z-index: 0;
 }
@@ -300,4 +300,34 @@ figure {
   font: 300 23px/1.6 var(--font-family-p1);
   margin: 0 0 50px 0;
   color: var(--white);
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.counter-box img {
+  object-fit: contain;
+  width: 200px;
+  height: 130px;
+  object-position: center;
+   margin: 0 0 5px 0;
+}
+
+.counter-box h3 {
+  font: 600 40px/1.2 var(--font-family-p1);
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.counter-box p {
+  font: 500 17px/1.6 var(--font-family-p1);
+  color: var(--white);
+  text-align: center;
+  margin: 0;
 }
