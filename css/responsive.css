@@ -81,7 +81,7 @@
   }
 
   .career-wrap h3,
-  .latest-news h3 {
+  .latest-news h3,.who-we-are-grid-card h3 {
     margin-bottom: 10px;
     font-size: 18px;
   }
@@ -147,6 +147,32 @@
 
   .news-card-text {
     width: 100%;
+  }
+
+  .who-we-are-grid {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .who-we-are-grid-card,
+  .who-we-are-grid-card.read-more {
+    position: relative !important;
+    transform: unset !important;
+    width: 100% !important;
+    height: auto !important;
+    top: unset !important;
+    left: unset !important;
+    right: unset !important;
+    bottom: unset !important;
+  }
+
+  .who-we-are-grid-card::before {
+    transform: unset !important;
+    top: 0;
+    left: 0;
   }
 }
 
