@@ -6,12 +6,47 @@
   .site-header .navbar li {
     padding-right: 10px;
   }
+
+  .who-arrow {
+    display: none;
+  }
+
+  .who-cards-container .who-card-item {
+    width: 100% !important;
+    height: auto !important;
+    transform: unset !important;
+    margin-bottom: 20px;
+  }
+
+  .who-cards-container .who-card-item:last-child {
+    margin: 0;
+  }
+
+  .who-card {
+    transform: unset !important;
+  }
+
+  .who-card-item::before {
+    transform: unset !important;
+  }
+
+  .who-content {
+    margin: 0;
+  }
+
+  .who-card-item {
+    margin-top: 0 !important;
+  }
 }
 
 @media (max-width: 991px) {
   .top-header .logo {
     max-width: 250px;
     height: 80px;
+  }
+
+  .who-we-are h2 br {
+    display: none;
   }
 
   .site-header .navbar {
@@ -81,7 +116,8 @@
   }
 
   .career-wrap h3,
-  .latest-news h3,.who-we-are-grid-card h3 {
+  .latest-news h3,
+  .who-we-are-grid-card h3 {
     margin-bottom: 10px;
     font-size: 18px;
   }
@@ -149,30 +185,17 @@
     width: 100%;
   }
 
-  .who-we-are-grid {
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
+  .who-we-are,
+  .subsidiaries,
+  .holding-numbers,.latest-news {
+    padding: 50px 0;
   }
-
-  .who-we-are-grid-card,
-  .who-we-are-grid-card.read-more {
-    position: relative !important;
-    transform: unset !important;
-    width: 100% !important;
-    height: auto !important;
-    top: unset !important;
-    left: unset !important;
-    right: unset !important;
-    bottom: unset !important;
+  
+  .our-partner{
+    padding: 50px 0 0;
   }
-
-  .who-we-are-grid-card::before {
-    transform: unset !important;
-    top: 0;
-    left: 0;
+  .latest-news h2 br{
+    display: none;
   }
 }
 
