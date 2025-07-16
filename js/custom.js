@@ -88,15 +88,24 @@ $(document).ready(function () {
       header.classList.remove("scrolled");
     }
   });
-
-  // 🔧 Search bar toggle — FIXED HERE
   const toggleBtn = document.querySelector(".search-toggle");
   const mobileSearch = document.querySelector(".mobile-search");
+  const icon = toggleBtn.querySelector("i");
 
-  if (toggleBtn && mobileSearch) {
+  if (toggleBtn && mobileSearch && icon) {
     toggleBtn.addEventListener("click", function (e) {
       e.preventDefault();
+
       mobileSearch.classList.toggle("show");
+
+      // Toggle icon class
+      if (mobileSearch.classList.contains("show")) {
+        icon.classList.remove("fa-search");
+        icon.classList.add("fa-times");
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-search");
+      }
     });
   }
   // 

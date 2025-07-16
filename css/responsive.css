@@ -43,7 +43,7 @@
   }
 
   .mobile-search.show {
-    display: block !important;
+    display: flex !important;
   }
 
   .mobile-only {
