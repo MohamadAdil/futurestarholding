@@ -1,0 +1,189 @@
+@media (max-width: 1199px) {
+  .site-header .navbar .navbar-nav {
+    gap: 10px;
+  }
+
+  .site-header .navbar li {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-header .logo {
+    max-width: 250px;
+    height: 80px;
+  }
+
+  .site-header .navbar {
+    padding: 0 !important;
+  }
+
+  .site-header .navbar .navbar-nav {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .site-header .navbar li {
+    border: none;
+    padding: 0px 0;
+  }
+
+  .site-header .navbar li a {
+    color: var(--white);
+  }
+
+  .search-bar {
+    display: none !important;
+  }
+
+  .search-toggle {
+    font-size: 18px;
+    color: var(--brown-text);
+    cursor: pointer;
+  }
+
+  .mobile-search.show {
+    display: block !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .desktop-search {
+    display: none !important;
+  }
+
+  .navbar-toggler {
+    display: inline-block;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-content span {
+    font-size: 18px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .who-we-are h2,
+  .subsidiaries h2,
+  .holding-numbers h2,
+  .our-partner h2,
+  .latest-news h2,
+  .career-wrap h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .career-wrap h3,
+  .latest-news h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .hero-content a,
+  .subsidiaries .text-wrap p,
+  .holding-numbers p,
+  .our-partner p,
+  .latest-news p,
+  .career-wrap p,
+  .white-br p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-banner .swiper-slide {
+    min-height: 500px;
+    height: auto;
+  }
+
+  .subsidiaries-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .subsidiaries-grid-item {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+  }
+
+  .subsidiaries-grid-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .counter-box img {
+    width: 100px;
+    height: 80px;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .footer-links li a {
+    font-size: 16px;
+  }
+
+  .btm-bar p {
+    font-size: 14px;
+  }
+
+  .news-card {
+    flex-direction: column;
+  }
+
+  .news-card-img {
+    width: 100%;
+  }
+
+  .news-card-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-main {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .right-content {
+    gap: 10px;
+  }
+
+  .top-header .logo {
+    max-width: 150px;
+    height: 55px;
+  }
+
+  .counter-box img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .counter-box h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .counter-box p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .subsidiaries-grid-item {
+    width: calc(50% - 20px);
+    height: auto;
+    padding: 20px;
+  }
+}

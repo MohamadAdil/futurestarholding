@@ -141,7 +141,7 @@ figure {
   font-size: 20px;
 }
 
-/*  */
+/* Header */
 .site-header {
   position: fixed;
   top: 0;
@@ -156,9 +156,34 @@ figure {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.top-header {
+  padding: 10px 0;
+}
+
+.top-header .logo {
+  object-fit: contain;
+  max-width: 329px;
+  height: 100px;
+}
+
+.top-header .social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-header .social-icons a {
+  color: var(--brown-text);
+  font-size: 16px;
+}
+
+.mobile-search {
+  transition: all 0.3s ease;
+}
 
 .site-header .navbar {
   background-color: #514328;
+  padding: 0.5rem 0;
 }
 
 .site-header .navbar .navbar-nav {
@@ -174,35 +199,48 @@ figure {
 
 .site-header .navbar li:last-child {
   border: 0;
-  padding: 0;
+  padding-right: 0;
 }
 
 .site-header .navbar li a {
-  padding: 0 !important;
-  margin: 0 !important;
   color: var(--white);
   font: 400 15px/1.2 var(--font-family-p1);
   text-transform: capitalize;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.top-header .logo {
-  object-fit: contain;
-  max-width: 329px;
-  height: 100px;
+.top-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.top-header .social-icons {
+.logo-wrapper {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
-.top-header .social-icons a {
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.navbar-toggler i {
   color: var(--brown-text);
+  font-size: 16px;
 }
 
 /*  */
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -250,6 +288,7 @@ figure {
   width: 100%;
   height: 100%;
   background-color: #65533373;
+  pointer-events: none;
 }
 
 .hero-banner .swiper-slide::after {
@@ -338,6 +377,7 @@ figure {
   width: 100%;
   height: 100%;
   z-index: 0;
+  pointer-events: none;
 }
 
 .who-we-are-grid-card.read-more::before {
@@ -439,6 +479,7 @@ figure {
   background-size: contain;
   background-position: center;
   z-index: 0;
+  pointer-events: none;
 }
 
 .holding-numbers h2 {
@@ -545,22 +586,27 @@ figure {
   align-items: center;
   justify-content: center;
   transition: all ease 0.5s;
-  /* height: 300px; */
+  height: 300px;
+  transform: scale(0.8);
 }
 
-/* .partner-swiper .swiper-slide::before{
+.partner-swiper .swiper-slide::before {
   position: absolute;
   content: '';
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--white);
+  background-image: url(../images/star-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   z-index: 0;
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-} */
+  pointer-events: none;
+}
+
 .partner-swiper .swiper-slide img {
-  /* width: 130px;
-  height: 70px; */
+  width: 120px;
+  height: 70px;
   object-fit: contain;
   object-position: center;
   z-index: 1;
@@ -578,6 +624,7 @@ figure {
   align-items: center;
   justify-content: center;
   margin: 30px 0 0;
+  gap: 5px;
 }
 
 .partner-swiper .swiper-pagination-bullet {
@@ -718,6 +765,7 @@ figure {
   background-size: contain;
   background-position: center;
   z-index: 0;
+  pointer-events: none;
 }
 
 .site-footer .career-wrap {

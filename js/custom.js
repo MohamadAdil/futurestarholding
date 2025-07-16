@@ -19,7 +19,8 @@ $(document).ready(function () {
 
     updateCount();
   });
-  // partent slider
+
+  // Partner slider
   const partnerSwiper = new Swiper('.partner-swiper', {
     loop: true,
     centeredSlides: true,
@@ -40,10 +41,12 @@ $(document).ready(function () {
     },
     breakpoints: {
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       480: {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       768: {
         slidesPerView: 3,
@@ -56,7 +59,8 @@ $(document).ready(function () {
       }
     }
   });
-  // hero slider
+
+  // Hero slider
   var swiper = new Swiper(".heroSwiper", {
     centeredSlides: true,
     loop: true,
@@ -64,7 +68,7 @@ $(document).ready(function () {
       delay: 4000,
       disableOnInteraction: false,
     },
-    speed: 1000, // <-- transition duration (in ms), adjust as needed
+    speed: 1000,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -74,7 +78,8 @@ $(document).ready(function () {
       clickable: true,
     },
   });
-  // Header
+
+  // Header scroll effect
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".site-header");
     if (window.scrollY > 100) {
@@ -83,4 +88,15 @@ $(document).ready(function () {
       header.classList.remove("scrolled");
     }
   });
+
+  // 🔧 Search bar toggle — FIXED HERE
+  const toggleBtn = document.querySelector(".search-toggle");
+  const mobileSearch = document.querySelector(".mobile-search");
+
+  if (toggleBtn && mobileSearch) {
+    toggleBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      mobileSearch.classList.toggle("show");
+    });
+  }
 });
