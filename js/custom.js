@@ -99,4 +99,17 @@ $(document).ready(function () {
       mobileSearch.classList.toggle("show");
     });
   }
+  // 
+  $('.navbar-toggler').on('click', function () {
+    const $icon = $(this).find('i');
+
+    // Use a small delay to ensure Bootstrap toggles the class first
+    setTimeout(() => {
+      if ($(this).hasClass('collapsed')) {
+        $icon.removeClass('fa-xmark').addClass('fa-bars'); // Menu is closed
+      } else {
+        $icon.removeClass('fa-bars').addClass('fa-xmark'); // Menu is open
+      }
+    }, 10);
+  });
 });
